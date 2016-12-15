@@ -1,0 +1,3 @@
+---
+slug: content
+name: Content

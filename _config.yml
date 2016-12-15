@@ -3,23 +3,24 @@
 name: Math 152 - Calculus II
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: http://aylvisaker.github.io/MC-MATH152-SP17/ # add site url http://example.com/
+url: http://aylvisaker.github.io/MC-MATH152-SP17/
 blog_theme: light # Or use dark
 baseurl: /MC-MATH152-SP17
 
 # Optional settings
 
-discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
-rss_enabled: true # Change to false if not
+discus_identifier: mc-math-spring17
+ga_analytics: UA-88755650-1
+rss_enabled: true
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
   flickr: # Add your Flickr handle
-  github: aylvisaker # Add your GitHub handle
+  github: aylvisaker
   linkedin: # Add your LinkedIn handle
-  twitter: #aylvisaker # Add your Twitter handle
-  email: aylvisaker@monmouthcollege.edu # Add your Email address
+  twitter: #aylvisaker
+  reddit: #aylvisaker
+  email: aylvisaker@monmouthcollege.edu
   bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)

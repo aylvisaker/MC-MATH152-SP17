@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Math 301 - Advanced Calculus</title>
+    <title>Math 141 - Elementary Functions</title>
     <description></description>
     <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4000/MC-MATH141-SP17/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Chapter 1 Notes</title>
-        <description>Course prerequisites.</description>
-        <pubDate>Sat, 03 Dec 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/posts/chapter-one-introduction</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/chapter-one-introduction</guid>
+        <title>Course Schedule</title>
+        <description>MC-MATH-141</description>
+        <pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/MC-MATH141-SP17/posts/schedule</link>
+        <guid isPermaLink="true">http://localhost:4000/MC-MATH141-SP17/posts/schedule</guid>
+      </item>
+    
+      <item>
+        <title>Practice Problems</title>
+        <description>MC-MATH-141</description>
+        <pubDate>Sat, 16 Jan 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/MC-MATH141-SP17/posts/homework</link>
+        <guid isPermaLink="true">http://localhost:4000/MC-MATH141-SP17/posts/homework</guid>
       </item>
     
   </channel>

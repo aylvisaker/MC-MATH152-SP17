@@ -1,0 +1,3 @@
+---
+slug: syllabus
+name: Syllabus
