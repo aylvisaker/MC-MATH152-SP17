@@ -18,13 +18,15 @@ description: MC-MATH-152
 * Textbook : PreCalculus by Faires and DeFranza (5th edition)
 
 # Course Schedule / Content
-A detailed schedule can be found on the course webpage. This will be kept up to date as the semester progresses. We have a total of 69 class days scheduled. Of those, 9 have been allotted for exams. We will require at least 47 days for class discussions. This leaves 13 flex days. Flex days can be used at any time for any reason as long as it is approved by a simple majority of students who are present. You may want to use one for a review day before an exam, or to spend some extra time discussing a particularly difficult section in the book.
+A detailed schedule can be found on the course webpage. This will be kept up to date as the semester progresses. We have a total of 55 class days scheduled (not including labs). Of those, 9 have been allotted for exams. We will require at least 36 days for class discussions. This leaves 14 flex days (a little bit less than one per week). Flex days can be used at any time for any reason as long as it is approved by a simple majority of students who are present. You may want to use one for a review day before an exam, or to spend some extra time discussing a particularly difficult section in the book.
 
-* Chapter 1 : Algebra review and introduction to functions
-* Chapter 2 : Combining functions with operations
-* Chapter 3 : Algebraic functions
-* Chapter 4 : Trigonometric and inverse trigonometric functions
-* Chapter 5 : Exponential and logarithmic functions
+* Chapter 5 : Integrals
+* Chapter 6 : Applications of Integration
+* Chapter 7 : Techniques of Integration
+* Chapter 8 : Further Applications of Integration
+* Chapter 9 : Differential Equations
+* Chapter 10 : Parametric Equations and Polar Coordinates
+* Chapter 11 : Infinite Sequences and Series
 
 # Resources
 * Instructor office hours : MF 11:00, TW 2:00, R 12:00 in CSB 348
@@ -37,11 +39,11 @@ Your overall grade for the course will be computed as the average of your exam s
 # Exams
 Exams must be written in pencil. Any exam written in pen will have 10% deducted from the final score.
 
-Many students think it's okay to listen to music while they take an exam. In this class that is not okay. If you are caught wearing headphones, your exam will be taken from you and you will receive a zero. If you need to use the restroom during an exam, leave all of your things behind (especially your phone) and quietly excuse yourself (eye contact with me is good enough, no need to make a production of it).
+Some students assume it is okay to listen to music while they take an exam. In this class that is not okay. If you are caught wearing headphones, your exam will be taken from you and you will receive a zero. If you need to use the restroom during an exam, leave all of your things behind (especially your phone) and quietly excuse yourself (eye contact with me is good enough, no need to make a production of it).
 
 Scheduled exam dates are available on the course calendar. These will likely change as we burn flex days, but will otherwise proceed on schedule. I will make an effort to remind you when an exam is coming up, but it is ultimately your responsibility to pay attention to the calendar.
 
-The final exam will be cumulative and takes place on Tuesday, May 9 at 11:30 in CSB 176. As of the writing of this document the exam time is listed as 11:30 PM. I presume this to be a typo, and we will plan to meet at 11:30 AM. If the exam time changes I will make an announcement in class and update this document. This exam cannot be rescheduled except under extreme circumstances.
+The final exam will be cumulative and takes place on either Saturday, May 6 at 3:00 PM or Friday, May 5 at 11:30 AM. This is not to imply that it is your choice to make, rather that registrar's schedule is ambiguous. I will make an announcement in class and update this document when I have clarification. The exam will take place in CSB 323. This exam cannot be rescheduled except under extreme circumstances.
 
 # Workload Expectations
 In addition to attending class each day, students should plan to spend approximately 10 hours per week working outside of class. This time should be spent reading, completing homework, studying, and making use of available resources. The figure is only an estimated average, some students may need to spend much more than 10 hours practicing in order to learn the material effectively.
