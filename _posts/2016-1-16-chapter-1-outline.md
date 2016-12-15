@@ -12,119 +12,59 @@ description: Integrals
 * [Section 5.5 - The Substitution Rule](#s5)
 
 <div id='s1'/>
-# Section 1.1 - Introduction
-* Natural numbers
-* Integers
-* Rational numbers
-* Irrational numbers
-* Real numbers
+# Section 5.1 - Areas and Distances
+* Areas of complex shapes are generally found by approximating with smaller, simpler shapes.
+* Suppose that $f$ is continuous on $[a,b]$ and that for any given $n$, $x_0,\dots,x_n$ is a partition of $[a,b]$ into subintervals of equal size. We define $\Delta x = x_1-x_0 = \frac{b-a}{n}$. Then the area of the region that lies under the graph of $f$ is
+	* $ A = \lim_{n\to\infty}R_n = \lim_{n\to\infty}\left(f(x_1)\Delta x + \dots + f(x_n)\Delta x\right) $
+	* $ A = \lim_{n\to\infty}L_n = \lim_{n\to\infty}\left(f(x_0)\Delta x + \dots + f(x_{n-1})\Delta x\right) $
+* Written in sigma notation, the above are:
+	$$ A = \lim_{n\to\infty}\sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty}\sum_{i=0}^{n-1} f(x_i)\Delta x $$
+* Distances under constant velocity are computed as $d = v \times t$. If velocity is allowed to vary, then we compute distance travelled using a Riemann sum.
+	$$ d = \lim_{n\to\infty}\sum_{i=1}^n v(t_i) \Delta t $$
 
 <div id='s2'/>
-# Section 1.2 - The Real Line
-* Coordinate line
-* Inequality rules
-	* Either $a<b$, or $b<a$, or $a=b$
-	* If $a>b$, then $a+c>b+c$
-	* If $a>b$ and $c>0$, then $ac>bc$
-	* If $a>b$ and $c<0$, then $ac<bc$
-* Intervals
-	* Set builder notation: $\\{x\mid a<x<b\\}$
-	* Open intervals
-	* Closed intervals
-	* Unbounded intervals
-	* Graphical representation
-* Sign charts
-* Union and intersection
-* Absolute value
-	* Distance on the real line (1D)
-	* Midpoints on the real line (1D)
-* Absolute value properties
-	* $\vert ab\vert = \vert a\vert \cdot \vert b\vert$
-	* $\left\vert \vert a\vert - \vert b\vert \right\vert \leq \vert a + b\vert \leq \vert a\vert + \vert b\vert$
-	* $\vert x\vert < a$ if and only if $-a<x<a$
-	* $\vert x\vert > a$ if and only if $x<-a$ or $x>a$
+# Section 1.2 - The Definite Integral
+* Suppose that $f$ is defined for $a\leq x\leq b$. For each $n$, divide the interval into $n$ subintervals of equal width $\Delta x = \frac{b-a}{n}$ and choose sample points $x_i*$ from each subinterval $[x_{i-1},x_i]$. The definite integral of $f$ from $a$ to $b$ is defined as the following limit, provided that the limit exists and gives the same value for any choice of representatives.
+	$$ \int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i*)\Delta x $$
+	* The definite integral is a number, not a function of $x$.
+	* It is possible to generalize this definition by removing the requirement that subintervals have equal width.
+	* If $f$ takes on negative values, then $\int_a^b f(x)\,dx$ is a *signed* area.
+	* The definitel integral of $f$ is not always defined.
+* **Theorem** if $f$ is continuous on $[a,b]$ or has only a finite number of jump discontinuities, then $\int_a^b f(x)\,dx$ exists.
+* **Theorem** if $f$ is integrable on $[a,b]$, then we can use the right-endpoints as representatives when computing a definite integral. I.e. $x_i* = x_i$.
+* The Midpoint Rule: When a limit of Riemann sums is difficult or impossible to compute, it may be advantageous to approximate the definite integral with a large Riemann sum. In these cases it is usually better to use a midpoint as a representative instead of the right endpoint. I.e. $x_i* = \overline{x_i} = (x_{i-1} + x_i)/2$.
+* **Theorem** Properties of the definite integral:
+	* $\int_a^b c\, dx = c(b-a)$
+	* $\int_a^b \left(f(x) \pm g(x)\right)\,dx = \int_a^b f(x)\,dx \pm \int_a^b g(x)\,dx$
+	* $\int_a^b c\cdot f(x)\,dx = c\int_a^b f(x)\,dx$
+	* if $f(x)\geq g(x)$ for $a\leq x\leq b$ then $\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$
+	* if $m\leq f(x)\leq M$ for $a\leq x\leq b$ then $m(b-a)\leq \int_a^b f(x)\,dx\leq M(b-a)$
 
 <div id='s3'/>
-# Section 1.3 - The Coordinate Plane
-* Coordinate plane (i.e. Cartesian plane or $xy$-plane)
-	* Origin
-	* $x$-axis
-	* $y$-axis
-	* Ordered pair (not to be confused with an interval)
-	* Quadrants
-* Distance formula in the plane (2D)
-* Midpoint formula in the plane (2D)
-* Standard form of a circle
-* Completing the square
+# Section 1.3 - The Fundamental Theorem of Calculus
+* An **accumulation function** for the function $f$ is a function of the form $F(x) = \int_a^x f(t)\,dt$.
+* If $F$ is an accumulation function for $f$, then $\int_a^b f(x)\,dx = F(b) - F(a)$.
+* **Fundamental Theorem Part 1** If $f$ is continuous on $[a,b]$, then its accumulation function is continuous and differentiable. Moreover $F'(x) = f(x)$.
+* **Fundamental Theorem Part 2** If $f$ is continuous on $[a,b]$, then $\int_a^b f(x)\,dx = F(b)-F(a)$ where $F$ is any antiderivative of $f$.
 
 <div id='s4'/>
-# Section 1.4 - Equations and Graphs
-* Equation
-	* Identity
-	* Conditional equation
-* Graph of an equation
-* $x$-intercepts and $y$-intercept (collectively known as axis intercepts)
-* Symmetry
-	* $x$-axis
-	* $y$-axis
-	* origin
+# Section 1.4 - Indefinite Integrals and the Net Change Theorem
+* $\int f(x)\,dx = F(x) + C$ means that $F'(x) = f(x)$.
+* The indefinite integral is always a family of functions.
+* **Net Change Theorem** The integral of a rate of change is the net change:
+	$$ \int_a^b F'(x) = F(b) - F(a) $$
+* Following is a table of indefinite integrals you would do well to familiarize yourself with.
+
+|$f(x)$           |$\int f(x)\,dx                  |
+|:----------------|:-------------------------------|
+|$c\cdot f(x)$    |$c\int f(x)\,dx                 |
+|$f(x)+g(x)$      |$\int f(x)\,dx + \int g(x)\,dx$ |
+|$k$              |$kx+C$                          |
+|$x^n$, $n\neq -1$|$\frac{x^{n+1}}{n+1}+C$         |
+|$1/x$            |$\ln\vert x\vert + C$           |
+|$e^x$            |$e^x + C$                       |
+|$a^x$            |$\frac{a^x}{\ln(a)}$            |
 
 <div id='s5'/>
-# Section 1.5 - Using Technology to Graph Equations
-* Viewing rectangle
+# Section 1.5 - The Substitution Rule
 
-<div id='s6'/>
-# Section 1.6 - Functions
-* Function / functional relationship
-	* Independent variable
-	* Dependent variable
-	* Box notation
-* Domain and range
-	* Finding domain and range from a graph
-	* Range is not always *possible* to find precisely
-* Vertical line test
-* Piecewise defined functions
-* Rate of change
-	* Difference quotient
-	* Average rate of change
-	* Instantaneous rate of change
-* Odd and even and neither functions
-	* Even functions have graphs with $y$-axis symmetry. Analytic test: $f(-x)=f(x)$.
-	* Odd functions have graphs with origin symmetry. Analytic test: $f(-x)=-f(x)$.
-	* Functions do not need to be even or odd. For example $f(x)=x+1$ is neither.
-* Local maximums and local minimums
-
-<div id='s7'/>
-# Section 1.7 - Linear Functions
-* Linear relationship / linear function
-* Slope of a line
-	* Positive slopes
-	* Negative slopes
-	* Zero slope
-* Point-slope form: $y-\color{red}{y_1}=\color{red}{m}(x-\color{red}{x_1})$.
-* Slope-intercept form: $y = \color{red}{m}x+\color{red}{b}$.
-* In the above, the red variables are what we call **parameters**. They represent fixed quantities, rather than changing ones (like the independent and dependent variables $x$ and $y$ do). For a given problem, we usually want to replace parameters with specific values. This is not true of the variables $x$ and $y$.
-* Slopes of parallel and perpendicular lines
-	* Parallel lines have the same slope
-	* Perpendicular lines have opposite (negative) inverse (reciprocal) slopes
-* General linear equation
-
-<div id='s8'/>
-# Section 1.8 - Quadratic Functions
-* Quadratic function
-* Parabola
-* Horizontal shifts. Let $c>0$.
-	* $y = f(x+c)$ is a shift to the left.
-	* $y = f(x-c)$ is a shift to the right.
-* Vertical shifts. Let $c>0$.
-	* $y = f(x) + c$ is a shift up.
-	* $y = f(x) - c$ is a shift down.
-* Graph of $y=\color{red}{a}x^2$
-	* If $a<0$ parabola opens downward
-	* If $a>0$ parabola opens upward
-	* The larger $\vert a\vert$, the steeper the parabola
-* Standard form: $y=\color{red}{a}(x-\color{red}{x_1})^2 + \color{red}{y_1}$
-* Quadratic formula: solutions to $ax^2+bx+c=0$ are $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
-* End behavior
-	* as $x\to\infty$, $f(x)\to$
-	* as $x\to-\infty$, $f(x)\to$
