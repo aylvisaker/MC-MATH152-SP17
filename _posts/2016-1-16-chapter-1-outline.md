@@ -23,7 +23,7 @@ description: Integrals
 	$$ d = \lim_{n\to\infty}\sum_{i=1}^n v(t_i) \Delta t $$
 
 <div id='s2'/>
-# Section 1.2 - The Definite Integral
+# Section 5.2 - The Definite Integral
 * Suppose that $f$ is defined for $a\leq x\leq b$. For each $n$, divide the interval into $n$ subintervals of equal width $\Delta x = \frac{b-a}{n}$ and choose sample points $x_i*$ from each subinterval $[x_{i-1},x_i]$. The definite integral of $f$ from $a$ to $b$ is defined as the following limit, provided that the limit exists and gives the same value for any choice of representatives.
 	$$ \int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i*)\Delta x $$
 	* The definite integral is a number, not a function of $x$.
@@ -41,30 +41,24 @@ description: Integrals
 	* if $m\leq f(x)\leq M$ for $a\leq x\leq b$ then $m(b-a)\leq \int_a^b f(x)\,dx\leq M(b-a)$
 
 <div id='s3'/>
-# Section 1.3 - The Fundamental Theorem of Calculus
+# Section 5.3 - The Fundamental Theorem of Calculus
 * An **accumulation function** for the function $f$ is a function of the form $F(x) = \int_a^x f(t)\,dt$.
 * If $F$ is an accumulation function for $f$, then $\int_a^b f(x)\,dx = F(b) - F(a)$.
 * **Fundamental Theorem Part 1** If $f$ is continuous on $[a,b]$, then its accumulation function is continuous and differentiable. Moreover $F'(x) = f(x)$.
 * **Fundamental Theorem Part 2** If $f$ is continuous on $[a,b]$, then $\int_a^b f(x)\,dx = F(b)-F(a)$ where $F$ is any antiderivative of $f$.
 
 <div id='s4'/>
-# Section 1.4 - Indefinite Integrals and the Net Change Theorem
+# Section 5.4 - Indefinite Integrals and the Net Change Theorem
 * $\int f(x)\,dx = F(x) + C$ means that $F'(x) = f(x)$.
 * The indefinite integral is always a family of functions.
 * **Net Change Theorem** The integral of a rate of change is the net change:
 	$$ \int_a^b F'(x) = F(b) - F(a) $$
-* Following is a table of indefinite integrals you would do well to familiarize yourself with.
-
-|$f(x)$           |$\int f(x)\,dx                  |
-|:----------------|:-------------------------------|
-|$c\cdot f(x)$    |$c\int f(x)\,dx                 |
-|$f(x)+g(x)$      |$\int f(x)\,dx + \int g(x)\,dx$ |
-|$k$              |$kx+C$                          |
-|$x^n$, $n\neq -1$|$\frac{x^{n+1}}{n+1}+C$         |
-|$1/x$            |$\ln\vert x\vert + C$           |
-|$e^x$            |$e^x + C$                       |
-|$a^x$            |$\frac{a^x}{\ln(a)}$            |
+* See the table on page 398 of your book for several indefinite integrals that you should know.
 
 <div id='s5'/>
-# Section 1.5 - The Substitution Rule
-
+# Section 5.5 - The Substitution Rule
+* Let $u = g(x)$ be a differentiable function so that $du=g'(x)dx$. If the range of $u$ is an interval $I$ and $f$ is differentiable on $I$, then the substitution rule states that $\int f(u)\,du = F(u) + C$ where $F$ is an antiderivative of $f$.
+* If $u = g(x)$ where $g'(x)$ is continuous on $[a,b]$ and $f is continuous on the range of $u=g(x)$, then $\int_a^b f(g(x))g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du$.
+* Suppose that $f$ is continuous on $[-a,a]$.
+	* If $f$ is an even function then $\int_{-a}^a f(x)\,dx = 2\int_0^a f(x)\,dx$.
+	* If $f$ is an odd function then $\int_{-a}^a f(x)\,dx = 0$.
