@@ -15,7 +15,7 @@ description: Applications of Integration
 # Section 6.1 - Areas Between Curves
 {% include image.html path="6.1.01.png" path-detail="6.1.01.hd.png" alt="Diagram of the area between two curves." %}
 {% include image.html path="6.1.02.png" path-detail="6.1.02.hd.png" alt="Diagram of the area between two curves." %}
-
+{% include image.html path="6.1.03.png" path-detail="6.1.03.hd.png" alt="Diagram of the area between two curves." %}
 
 <div id='s2'/>
 # Section 6.2 - Volumes
