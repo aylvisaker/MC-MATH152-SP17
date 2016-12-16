@@ -15,7 +15,7 @@ description: MC-MATH-152
 * Course webpage : https://aylvisaker.github.io/MC-MATH152-SP17/
 * Meeting times : MTWF 10:00-10:50 AM, R 9:00-10:50 AM
 * Meeting location : CSB 323
-* Textbook : PreCalculus by Faires and DeFranza (5th edition)
+* Textbook : Calculus by Stewart
 
 # Course Schedule / Content
 A detailed schedule can be found on the course webpage. This will be kept up to date as the semester progresses. We have a total of 55 class days scheduled (not including labs). Of those, 9 have been allotted for exams. We will require at least 36 days for class discussions. This leaves 14 flex days (a little bit less than one per week). Flex days can be used at any time for any reason as long as it is approved by a simple majority of students who are present. You may want to use one for a review day before an exam, or to spend some extra time discussing a particularly difficult section in the book.
