@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42285,        814]
-NotebookOptionsPosition[     41970,        798]
-NotebookOutlinePosition[     42311,        813]
-CellTagsIndexPosition[     42268,        810]
+NotebookDataLength[     42350,        814]
+NotebookOptionsPosition[     42035,        798]
+NotebookOutlinePosition[     42376,        813]
+CellTagsIndexPosition[     42333,        810]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -75,11 +75,11 @@ Cell[BoxData[{
    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Export", "[", 
-   RowBox[{"\"\<_includes\\\\images\\\\6.1.01.png\>\"", ",", "picture"}], 
-   "]"}], ";"}]}], "Input",
+   RowBox[{"\"\<_assets\\\\images\\\\6.1.01.png\>\"", ",", "picture"}], "]"}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.6908376511072674`*^9, 3.6908380485117164`*^9}, {
   3.6908381795619516`*^9, 3.6908381895692005`*^9}, {3.690838252517496*^9, 
-  3.6908382940624757`*^9}}],
+  3.6908382940624757`*^9}, {3.690838650229113*^9, 3.690838658661512*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{
@@ -793,7 +793,7 @@ kQ==
  CellChangeTimes->{{3.6908377922377796`*^9, 3.690837873221944*^9}, {
    3.6908379156126547`*^9, 3.6908379281529646`*^9}, {3.690837993779521*^9, 
    3.690838008553397*^9}, 3.6908380490688305`*^9, 3.6908382003342295`*^9, {
-   3.690838264288617*^9, 3.690838295692375*^9}}]
+   3.690838264288617*^9, 3.690838295692375*^9}, 3.690838661000061*^9}]
 }, Open  ]]
 },
 WindowSize->{958, 998},
@@ -813,8 +813,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 2195, 59, 164, "Input"],
-Cell[2778, 83, 39176, 712, 277, "Output"]
+Cell[580, 22, 2238, 59, 164, "Input"],
+Cell[2821, 83, 39198, 712, 277, "Output"]
 }, Open  ]]
 }
 ]
