@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13148,        363]
-NotebookOptionsPosition[     12622,        340]
-NotebookOutlinePosition[     12963,        355]
-CellTagsIndexPosition[     12920,        352]
+NotebookDataLength[     17346,        477]
+NotebookOptionsPosition[     16777,        453]
+NotebookOutlinePosition[     17118,        468]
+CellTagsIndexPosition[     17075,        465]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -328,13 +328,126 @@ Cell[BoxData[{
  RowBox[{"publish", "[", 
   RowBox[{"picture", ",", "\"\<6.1.02\>\""}], "]"}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQvev7weM76l87rni99zKI/nKa/xaITnmW/BZEP5ad
+1:eJxTTMoPSmViYGAQAWIQvev7weM76l87rni99zKI/nKa/xaITnmW/BZEP5ad
 9xlEv3snLLkTSO8InCgPoqdfDjIG0d82FVqC6HeTriSD6GOXPHNAdNTOjgYQ
 rdOe3gGiWXYH94Po07beU0A0U5TtfBBd8XvXZRDtc9vmGoguDtrwDUS79Sz6
 A6L51MzkdwHpQ4JHFUD06ahubRB9pmyHCYi2j7GxBtF/BJzDQPS8CRujQfQl
 60VpINpDZmU2iL73xGIiiD7Xf3UpiM5fEb0FRNtdD90Botfs3v4MRDfHCr4G
-0XFRcW9BtMVa9Y8gOutoO5gGAGyFrmU=
-  "]]
+0XFRcW9BtMVa9Y8gOutoO5h22rA6ah+Qrs59BaYBn4+3Ww==
+  "]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "*", 
+    RowBox[{"Sin", "@", "x"}]}], "+", 
+   RowBox[{"x", "^", "2"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "[", "x_", "]"}], ":=", 
+  RowBox[{"x", "^", "2"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sols", "=", 
+   RowBox[{"x", "/.", 
+    RowBox[{"DeleteDuplicates", "@", 
+     RowBox[{"Solve", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"f", "@", "x"}], "\[Equal]", 
+          RowBox[{"g", "@", "x"}]}], ",", 
+         RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", 
+          RowBox[{"4", "\[Pi]"}]}]}], "}"}], ",", "x"}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"picture", "=", 
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"f", "[", "x", "]"}], ",", 
+         RowBox[{"g", "[", "x", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", 
+         RowBox[{"4", "\[Pi]"}]}], "}"}], ",", 
+       RowBox[{"Filling", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"1", "\[Rule]", 
+          RowBox[{"{", "2", "}"}]}], "}"}]}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"#", ",", 
+             RowBox[{"f", "@", "#"}]}], "}"}], "&"}], "/@", "sols"}], "]"}]}],
+        "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Text", "[", 
+          RowBox[{
+           RowBox[{"TraditionalForm", "@", 
+            RowBox[{"StringJoin", "[", 
+             RowBox[{"\"\<f[\>\"", ",", 
+              RowBox[{"ToString", "@", "#"}], ",", "\"\<] = g[\>\"", ",", 
+              RowBox[{"ToString", "@", "#"}], ",", "\"\<]\>\""}], "]"}]}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"#", "+", "1"}], ",", 
+             RowBox[{
+              RowBox[{"f", "@", "#"}], "+", "10"}]}], "}"}]}], "]"}], "&"}], "/@",
+         "sols"}], "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{"Text", "[", 
+        RowBox[{
+         RowBox[{
+         "TraditionalForm", "[", 
+          "\"\<A = \!\(\*SubsuperscriptBox[\(\[Integral]\), \(0\), \(\[Pi]\)]\
+\)f(x)-g(x)\[DifferentialD]x + \!\(\*SubsuperscriptBox[\(\[Integral]\), \(2  \
+\[Pi]\), \(3  \[Pi]\)]\)f(x)-g(x)\[DifferentialD]x\>\"", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"5", ",", "180"}], "}"}]}], "]"}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{"Text", "[", 
+        RowBox[{
+         RowBox[{
+         "TraditionalForm", "[", 
+          "\"\<+ \!\(\*SubsuperscriptBox[\(\[Integral]\), \(\[Pi]\), \(2  \
+\[Pi]\)]\)g(x)-f(x)\[DifferentialD]x + \
+\!\(\*SubsuperscriptBox[\(\[Integral]\), \(3  \[Pi]\), \(4  \
+\[Pi]\)]\)g(x)-f(x)\[DifferentialD]x\>\"", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"6", ",", "150"}], "}"}]}], "]"}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "16"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "200"}], "}"}]}], "}"}]}]}], "\[IndentingNewLine]",
+     "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"publish", "[", 
+  RowBox[{"picture", ",", "\"\<6.1.03\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6908518286708984`*^9, 3.6908518839218683`*^9}, {
+  3.690851974541937*^9, 3.6908519868518295`*^9}, {3.6908520174670734`*^9, 
+  3.690852116860224*^9}, {3.690852151210825*^9, 3.690852416703767*^9}, {
+  3.690852458644038*^9, 3.6908530634396653`*^9}, {3.6908530977644653`*^9, 
+  3.690853164206484*^9}, {3.690853983496738*^9, 3.6908541496965504`*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -362,7 +475,8 @@ Cell[2315, 64, 98, 1, 64, "Chapter"],
 Cell[CellGroupData[{
 Cell[2438, 69, 96, 1, 53, "Chapter"],
 Cell[2537, 72, 2304, 57, 145, "Input"],
-Cell[4844, 131, 7750, 205, 316, "Input"]
+Cell[4844, 131, 7766, 205, 316, "Input"],
+Cell[12613, 338, 4136, 111, 319, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
