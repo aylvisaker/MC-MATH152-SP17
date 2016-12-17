@@ -19,6 +19,9 @@ description: Applications of Integration
 
 <div id='s2'/>
 # Section 6.2 - Volumes
+{% include image.html path="6.2.01.png" path-detail="6.2.01.hd.png" alt="Solid of revolution." %}
+{% include image.html path="6.2.02.png" path-detail="6.2.02.hd.png" alt="Solid of revolution." %}
+{% include image.html path="6.2.03.png" path-detail="6.2.03.hd.png" alt="Solid of revolution." %}
 
 <div id='s3'/>
 # Section 6.3 - Volumes by Cylindrical Shells
