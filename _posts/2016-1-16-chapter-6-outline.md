@@ -13,7 +13,6 @@ description: Applications of Integration
 
 <div id='s1'/>
 # Section 6.1 - Areas Between Curves
-{% include image.html path="6.1.01.png" path-detail="6.1.01.hd.png" alt="Diagram of the area between two curves." %}
 {% include image.html path="6.1.02.png" path-detail="6.1.02.hd.png" alt="Diagram of the area between two curves." %}
 {% include image.html path="6.1.03.png" path-detail="6.1.03.hd.png" alt="Diagram of the area between two curves." %}
 
@@ -25,6 +24,7 @@ description: Applications of Integration
 
 <div id='s3'/>
 # Section 6.3 - Volumes by Cylindrical Shells
+{% include image.html path="6.3.01.png" path-detail="6.3.01.hd.png" alt="Method of cylindric shells." %}
 
 <div id='s4'/>
 # Section 6.4 - Work

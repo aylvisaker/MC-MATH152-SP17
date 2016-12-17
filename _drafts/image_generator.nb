@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     35228,        943]
-NotebookOptionsPosition[     34335,        909]
-NotebookOutlinePosition[     34676,        924]
-CellTagsIndexPosition[     34633,        921]
+NotebookDataLength[     41043,       1081]
+NotebookOptionsPosition[     40074,       1044]
+NotebookOutlinePosition[     40415,       1059]
+CellTagsIndexPosition[     40372,       1056]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -902,8 +902,143 @@ Cell[BoxData[{
   3.6909441362254033`*^9, 3.6909441387741475`*^9}}]
 }, Closed]],
 
+Cell[CellGroupData[{
+
 Cell["Section 6.3", "Subchapter",
- CellChangeTimes->{{3.690939749729516*^9, 3.690939751225247*^9}}]
+ CellChangeTimes->{{3.690939749729516*^9, 3.690939751225247*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"picture", "=", 
+   RowBox[{"Row", "@", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Show", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Plot", "[", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{"x", "^", "2"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "0", ",", 
+            RowBox[{"Sqrt", "[", "\[Pi]", "]"}]}], "}"}], ",", 
+          RowBox[{"AxesStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"Black", ",", 
+             RowBox[{"colors", "[", 
+              RowBox[{"[", "3", "]"}], "]"}]}], "}"}]}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Show", "@@", 
+         RowBox[{"(", 
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"Graphics", "@", 
+             RowBox[{"{", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"EdgeForm", "[", 
+                RowBox[{"RGBColor", "[", 
+                 RowBox[{
+                  RowBox[{"1", "-", 
+                   RowBox[{"r", "/", 
+                    RowBox[{"Sqrt", "@", "Pi"}]}]}], ",", "0", ",", 
+                  RowBox[{"r", "/", 
+                   RowBox[{"Sqrt", "@", "Pi"}]}]}], "]"}], "]"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"RGBColor", "[", 
+                RowBox[{
+                 RowBox[{"1", "-", 
+                  RowBox[{"r", "/", 
+                   RowBox[{"Sqrt", "@", "Pi"}]}]}], ",", "0", ",", 
+                 RowBox[{"r", "/", 
+                  RowBox[{"Sqrt", "@", "Pi"}]}]}], "]"}], ",", 
+               RowBox[{"Opacity", "[", "0.2", "]"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"Rectangle", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"r", "-", "0.1"}], ",", "0"}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"r", ",", 
+                   RowBox[{"Sin", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"r", "-", "0.05"}], ")"}], "^", "2"}], "]"}]}], 
+                  "}"}]}], "]"}]}], "\[IndentingNewLine]", "}"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"r", ",", "0.1", ",", 
+              RowBox[{"Sqrt", "[", "Pi", "]"}], ",", "0.1"}], "}"}]}], "]"}], 
+          ")"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{"ImageSize", "\[Rule]", "235"}]}], "\[IndentingNewLine]", 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"Show", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Show", "@", 
+         RowBox[{"Table", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"ParametricPlot3D", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"r", "*", 
+                RowBox[{"Sin", "@", "t"}]}], ",", 
+               RowBox[{"r", "*", 
+                RowBox[{"Cos", "@", "t"}]}], ",", "h"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"t", ",", "0", ",", 
+               RowBox[{"2", "Pi"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"h", ",", "0", ",", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"r", "^", "2"}], "]"}]}], "}"}], 
+             "\[IndentingNewLine]", ",", 
+             RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+             RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"Directive", "@", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Opacity", "[", ".4", "]"}], ",", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"r", "/", 
+                    RowBox[{"Sqrt", "@", "Pi"}]}]}], ",", "0", ",", 
+                   RowBox[{"r", "/", 
+                    RowBox[{"Sqrt", "@", "Pi"}]}]}], "]"}]}], "}"}]}]}]}], 
+            "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"{", 
+            RowBox[{"r", ",", "0.1", ",", 
+             RowBox[{"Sqrt", "[", "Pi", "]"}], ",", "0.1"}], "}"}]}], "]"}]}],
+         ",", "\[IndentingNewLine]", 
+        RowBox[{"ParametricPlot3D", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "t"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"t", ",", "0", ",", "1.5"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"colors", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "235"}]}], "\[IndentingNewLine]", 
+       "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"publish", "[", 
+  RowBox[{"picture", ",", "\"\<6.3.01\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6909486101349845`*^9, 3.6909486155615015`*^9}, {
+   3.6909486829690313`*^9, 3.6909487536910744`*^9}, {3.6909487943595605`*^9, 
+   3.6909487950164633`*^9}, {3.690948837756077*^9, 3.6909488413823786`*^9}, {
+   3.6909488730572777`*^9, 3.6909489159260654`*^9}, {3.690948955776804*^9, 
+   3.6909489890608997`*^9}, {3.6909490550777617`*^9, 
+   3.6909492208935685`*^9}, {3.6909494266055107`*^9, 
+   3.6909496307727833`*^9}, {3.6909496632445307`*^9, 
+   3.6909496771696224`*^9}, {3.6909498336402884`*^9, 
+   3.6909499019628625`*^9}, {3.690950387507918*^9, 3.690950405095589*^9}, 
+   3.6909504471528244`*^9, {3.690950583835162*^9, 3.6909506001968174`*^9}, {
+   3.690950664916216*^9, 3.6909507501677704`*^9}, {3.690950788955718*^9, 
+   3.690950857831732*^9}, {3.6909509151925926`*^9, 3.6909510703428917`*^9}}]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -942,7 +1077,10 @@ Cell[17256, 467, 6058, 146, 369, "Input"],
 Cell[23317, 615, 5238, 137, 369, "Input"],
 Cell[28558, 754, 5635, 147, 350, "Input"]
 }, Closed]],
-Cell[34208, 904, 99, 1, 45, "Subchapter"]
+Cell[CellGroupData[{
+Cell[34230, 906, 99, 1, 45, "Subchapter"],
+Cell[34332, 909, 5702, 130, 392, "Input"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
