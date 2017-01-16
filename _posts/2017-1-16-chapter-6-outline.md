@@ -91,13 +91,38 @@ The key to keeping all this straight is that when using the method of slicing, w
 
 {% include image.html path="6.2.04.png" path-detail="6.2.04.hd.png" alt="Sketch of the region S." %}
 
-The cross-sections are washers with $R=2$ and $r=\sqrt{4y}$. We obtained our formula for $r$ by solving $y=\frac14 x^2$ for $y$. Now we can set up our integral. Observe that the smallest $y$-coordinate in the region $S$ is $0$ and the largest is $1$. These give us our limits of integration.
+The cross-sections are washers with $R=2$ and $r=\sqrt{4y}$. We obtained our formula for $r$ by solving $y=\frac14 x^2$ for $y$. Now we can set up our integral. Observe that the smallest $y$-coordinate in the region $S$ is $0$ and the largest is $\frac14 (2^2)=1$. These give us our limits of integration.
 
-$$ \int_0^2 \pi(4-4y)\,dy. $$
+$$ \int_0^1 \pi(4-4y)\,dy. $$
+
+### General volumes
+
+The method of slicing can be used to find volumes of regions that aren't necessarily obtained by revolving a region about a line. In fact, it applies to any region and any axis. All we need to be able to do is associate with each point, $p$, along that axis, a cross-sectional area, $A(p)$. (This is easiest to picture when the axis is either horizontal or vertical with respect to the $xy$-plane, i.e. when $p$ is either $x$ or $y$.) Once we know the cross-sectional areas, we can find the smallest and largest $p$-coordinates in the region and set up the integral: $\int_a^b A(p)\,dp$.
 
 <div id='s3'/>
 # Section 6.3 - Volumes by Cylindrical Shells
+
+In this section we will find volumes by integrating *perpendicular* to the axis of revolution. In some cases this can make the integral much easier to evaluate (not so much in others). Unlike the method of slicing, this method is only suited to finding the volume of a solid of revolution.
+
+The picture below shows, on the left, the region bound by $y=\sin(x^2)$ and the $x$-axis, with $0\leq x\leq\pi$, approximated by rectangles. The axis of revolution in this case is the vertical line $x=0$ (the $y$-axis). On the right, we see the solid of revoution approximated by cylindric shells.
+
 {% include image.html path="6.3.01.png" path-detail="6.3.01.hd.png" alt="Method of cylindric shells." %}
+
+When one of these rectangles is revolved about the $y$-axis, we get a hollow cylinder (which we call a cylindric shell). The volume of one of these shells is given by:
+
+$$ V_i = \pi\left(R^2-r^2)h $$
+
+where $R$ represents the outer radius of the shell, $r$ represents the inner radius, and $h$ represents the height. If the rectangle occupies $(x_i,x_{i+1})$ on the $x$-axis and has height $f\left(\overline{x_i}\right)$, then $r = x_i$, $R = x_{i+1} = x_i + \Delta x$, and $h = f\left(\overline{x_i}\right)$. So the volume of one of our shells could be expressed as:
+
+$$ V_i = \pi\left((x_i+\Delta x)^2 - x_i^2\right)f\left(\overline{x_i}\right). $$
+
+Notice that $(x_i+\Delta x)^2 - x_i^2 = 2x_i\Delta x + \Delta x^2$. So summing and allowing $\Delta x\to 0$ we get the integral:
+
+$$ V = \int_a^b \pi(2x) f(x)\,dx. $$
+
+In the example above, $a=0$ and $b=\sqrt{pi}$. In all cases, these represent the inner-most and outer-most (respectively) coordinates running perpendicular to the axis of revolution. The astute observer will note that $2\pi r h$ (the quantity we integrated, where $r=x$ and $h=f(x)$) is exactly the area of a hollow cylinder with radius $r$ and height $h$!
+
+If we wanted to revolve about $x=-1$ then we could use $r = x + 1$. If we wanted to revolve a region about the $x$-axis, then our radius would be measured vertically (instead of horizontally) and the height would be measured horizontally. We could even revolve a region bound between two curves by allowing the height to be, e.g. $h = f(x)-g(x)$.
 
 <div id='s4'/>
 # Section 6.4 - Work
