@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45791,       1212]
-NotebookOptionsPosition[     44724,       1172]
-NotebookOutlinePosition[     45077,       1188]
-CellTagsIndexPosition[     45034,       1185]
+NotebookDataLength[     51437,       1365]
+NotebookOptionsPosition[     50327,       1324]
+NotebookOutlinePosition[     50679,       1340]
+CellTagsIndexPosition[     50636,       1337]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -586,7 +586,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.6935886033030767`*^9, 3.693588769805984*^9}, {
   3.693588971089137*^9, 3.69358902553054*^9}, {3.693589079197485*^9, 
   3.693589103755458*^9}, {3.693589396374137*^9, 3.693589407082469*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1027,7 +1027,159 @@ Cell[BoxData[{
  CellChangeTimes->{{3.6909389089284096`*^9, 3.690938916553199*^9}, {
   3.6909389824790983`*^9, 3.6909390600796256`*^9}, {3.6909391304030423`*^9, 
   3.6909392604405575`*^9}, {3.690939294055414*^9, 3.6909393167183595`*^9}, {
-  3.6909441362254033`*^9, 3.6909441387741475`*^9}}]
+  3.6909441362254033`*^9, 3.6909441387741475`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"picture", "=", 
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "^", "2"}], "/", "4"}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "2.3"}], "}"}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{
+          RowBox[{"colors", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], ",", "Thick"}], "]"}]}]}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", "Thick", ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"2", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "5"}], "}"}]}], "}"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "1"}], "}"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], ",", 
+        RowBox[{"Thickness", "[", ".01", "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "5"}], "}"}]}], "}"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "8", "]"}], "]"}], ",", "Thick", ",", "Dashed", ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", ".5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", ".5"}], "}"}]}], "}"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "4", "]"}], "]"}], ",", "Thick", ",", "Dashed", ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", ".5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             SqrtBox["2"], ",", ".5"}], "}"}]}], "}"}], "]"}]}], "}"}]}], ",",
+      "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], ",", 
+        RowBox[{"PointSize", "[", ".03", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", ".5"}], "}"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Text", "[", 
+         RowBox[{"\"\<(0, y)\>\"", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.155", ",", ".6"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"16", ",", "Bold", ",", 
+          RowBox[{"colors", "[", 
+           RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}], "]"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "4", "]"}], "]"}], ",", 
+        RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           SqrtBox["2"], ",", ".5"}], "}"}], "]"}], ",", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<(\!\(\*SqrtBox[\(4  y\)]\), y)\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{"1.2", ",", ".65"}], "}"}]}], "]"}], ",", 
+          RowBox[{"Directive", "[", 
+           RowBox[{"16", ",", "Bold"}], "]"}]}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"colors", "[", 
+         RowBox[{"[", "8", "]"}], "]"}], ",", 
+        RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", ".5"}], "}"}], "]"}], ",", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+          RowBox[{"Text", "[", 
+           RowBox[{"\"\<(2, y)\>\"", ",", 
+            RowBox[{"{", 
+             RowBox[{"2.15", ",", ".6"}], "}"}]}], "]"}], ",", 
+          RowBox[{"Directive", "[", 
+           RowBox[{"16", ",", "Bold"}], "]"}]}], "]"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"publish", "[", 
+  RowBox[{"picture", ",", "\"\<6.2.04\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6935924471799393`*^9, 3.6935926471838503`*^9}, {
+  3.693592689652753*^9, 3.693592737796995*^9}, {3.69359279117937*^9, 
+  3.69359290329908*^9}, {3.6935940565083447`*^9, 3.693594300274185*^9}, {
+  3.693594331879768*^9, 3.693594570079175*^9}, {3.693594630991116*^9, 
+  3.693594707875589*^9}, {3.693594739632494*^9, 3.693594992135515*^9}, {
+  3.6935950700432463`*^9, 3.6935951200595083`*^9}, {3.69359519081409*^9, 
+  3.6935952142081957`*^9}, {3.693595379791209*^9, 3.693595427644844*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -1171,7 +1323,7 @@ Cell[BoxData[{
 }, Open  ]]
 },
 WindowSize->{958, 998},
-WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -1201,16 +1353,17 @@ Cell[5207, 141, 7766, 205, 284, "Input"],
 Cell[12976, 348, 4375, 116, 255, "Input"],
 Cell[17354, 466, 2104, 56, 114, "Input"],
 Cell[19461, 524, 2302, 63, 114, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[21800, 592, 103, 1, 62, "Subchapter"],
-Cell[21906, 595, 6058, 146, 369, "Input"],
-Cell[27967, 743, 5238, 137, 369, "Input"],
-Cell[33208, 882, 5635, 147, 350, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[38880, 1034, 99, 1, 46, "Subchapter"],
-Cell[38982, 1037, 5702, 130, 352, "Input"]
+Cell[21800, 592, 103, 1, 46, "Subchapter"],
+Cell[21906, 595, 6058, 146, 360, "Input"],
+Cell[27967, 743, 5238, 137, 360, "Input"],
+Cell[33208, 882, 5635, 147, 343, "Input"],
+Cell[38846, 1031, 5600, 150, 326, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[44483, 1186, 99, 1, 46, "Subchapter"],
+Cell[44585, 1189, 5702, 130, 352, "Input"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]]
