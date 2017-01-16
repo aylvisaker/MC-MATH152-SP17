@@ -55,6 +55,8 @@ Each day students should plan to bring
 * questions from the reading
 * problems from the homework
 
+Students should be prepared for class each day. That means you should already have read the section we will be discussing that day, and (at a minimum) have looked at the corresponding homework problems. Be prepared to ask questions from the reading and homework. In short, you should be prepared to *participate* in our discussion of that chapter.
+
 Social media use (whether on a phone or a computer) is not allowed in this class. It is distracting at best, disruptive at worst, and downright rude in every instance. Phones should be silenced before class begins and kept put away while class is in session. If you must have your phone on due to an imminent emergency, it should be kept on vibrate and you should quietly leave the room to answer any calls or texts. If you are caught using a your phone in class, you will be asked to leave. Please don't make this an issue.
 
 The seating arrangement will be left to your discretion so long as it doesn't create problems. If we start having problems staying on task, I will shuffle students around. That will probably mean displacing another student from his/her chosen seat, so please don't make this necessary.
