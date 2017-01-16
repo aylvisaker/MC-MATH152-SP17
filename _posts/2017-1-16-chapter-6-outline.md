@@ -43,7 +43,7 @@ But we can simplify the process by integrating along the $y$-axis instead of the
 
 Then the area bound by the curves is given by the much simpler integral:
 
-$$\int_{-2}^4 \left((y+1) - (\frac{y^2}{2} - 3)\right)\,dy$$
+$$\int_{-2}^4 \left((y+1) - (y^2/2- 3)\right)\,dy$$
 
 <div id='s2'/>
 # Section 6.2 - Volumes
@@ -53,7 +53,7 @@ Let $f(x) = x + \sin(x)$ and let $S$ be the region bound by $y=f(x)$, the $x$-ax
 
 {% include image.html path="6.2.01.png" path-detail="6.2.01.hd.png" alt="Solid of revolution." %}
 
-Approximating the region with rectangles is a natural approach because when a rectangle is revolved about the $x$-axis it becomes a cylinder. We know the volume of a cylinder is $V = \pi r^2h$ where $r$ is the radius and $h$ is the height. In this case $r = f(x)$ and $h = \Delta x$. Thus, an approximation of the volume we seek is $\sum V_i = \sum \pi f(\overline{x_i})^2 \Delta x$. As $\Delta x\to 0$ we find the exact volume to be
+Approximating the region with rectangles is a natural approach because when a rectangle is revolved about the $x$-axis it becomes a cylinder. We know the volume of a cylinder is $V = \pi r^2h$ where $r$ is the radius and $h$ is the height. In this case $r = f(x)$ and $h = \Delta x$. Thus, an approximation of the volume we seek is $\sum V_i = \sum \pi f\left(\overline{x_i}\right)^2 \Delta x$. As $\Delta x\to 0$ we find the exact volume to be
 
 $$\int_a^b \pi f(x)^2\,dx.$$
 
@@ -69,11 +69,11 @@ $$ V_i = \pi R^2 h - \pi r^2 h = \pi (R^2-r^2) h $$
 
 Here we have $R = f(x)$ and $r = g(x)$
 
-$$ V_i = \pi \left(f(\overline{x_i})^2 - g(\overline{x_i})^2\right) \Delta x. $$
+$$ V_i = \pi \left(f\left(\overline{x_i}\right)^2 - g\left(\overline{x_i}\right)^2\right) \Delta x. $$
 
 Finally, summing and letting $\Delta x\to 0$ gives the integral:
 
-$$ V = \int_a^b \pi\left(f(x)^2-g(x)^2)\,dx $$
+$$ V = \int_a^b \pi\left(f(x)^2-g(x)^2\right)\,dx $$
 
 ### Revolving about arbitrary horizontal lines
 
@@ -83,13 +83,13 @@ Suppose now that we want to revolve the region $S$ about the line $y=-2$ instead
 
 Instead of $R = f(x)$, we now have $R = f(x) - (-2) = f(x) + 2$. Similarly, $r = g(x) + 2$. So the volume of the solid of revolution is given by the integral:  
 
-$$ V = \int_a^b \pi\left((f(x)+2)^2-(g(x)+2)^2)\,dx $$
+$$ V = \int_a^b \pi\left((f(x)+2)^2-(g(x)+2)^2\right)\,dx $$
 
 ### Revolving about vertical lines
 
 The key to keeping all this straight is that when using the method of slicing, we integrate *along* the axis of revolution. This gives us a radius *perpendicular* to the axis of revolution (as the radius of a cylinder runs perpendicular to its height). For example consider the region, $S$, bound by $y=\frac14 x^2$, $x=2$, and $y=0$. Let's find the volume obtained by revolving $S$ about the $y$-axis.
 
-{% include image.html path="6.2.03.png" path-detail="6.2.03.hd.png" alt="Solid of revolution." %}
+{% include image.html path="6.2.04.png" path-detail="6.2.04.hd.png" alt="Sketch of the region S." %}
 
 The cross-sections are washers with $R=2$ and $r=\sqrt{4y}$. We obtained our formula for $r$ by solving $y=\frac14 x^2$ for $y$. Now we can set up our integral. Observe that the smallest $y$-coordinate in the region $S$ is $0$ and the largest is $1$. These give us our limits of integration.
 
