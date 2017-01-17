@@ -34,7 +34,12 @@ A detailed schedule can be found on the course webpage. This will be kept up to 
 * Chapter 11 : Infinite Sequences and Series
 
 # Grading Scale
-Your overall grade for the course will be computed as the average of your exam scores and follow the standard 90/80/70/60 scale, with 90 sufficient for some kind of A, 80 sufficient for some kind of B, etc. Plus and minus grades will be assigned at the instructor's discretion, typically the lower third of the range (0-3) earning a minus and the upper third of the range (7 and up) earning a plus.
+Letter grades will follow the standard 90/80/70/60 scale, with 90 sufficient for some kind of A, 80 sufficient for some kind of B, etc. Plus and minus grades will be assigned at the instructor's discretion, typically the lower third of the range (0-3) earning a minus and the upper third of the range (7 and up) earning a plus.
+
+Your course percentage will be a weighted average of quiz scores (30%), exam scores (55%), and your final exam (15%).
+
+# Quizzes
+Quizzes will be given every Thursday at the beginning of lab. You will be allowed 30 minutes to complete the quiz. Problems will be taken directly from the homework. You can use your notes / homework, but must show all work to get full credit.
 
 # Exams
 Scheduled exam dates are available on the course calendar. These will likely change as we burn flex days, but will otherwise proceed on schedule. I will make an effort to remind you when an exam is coming up, but it is ultimately your responsibility to pay attention to the calendar.
@@ -47,7 +52,6 @@ The final exam will be cumulative and takes place on Friday, May 5 at 11:30 AM. 
 In addition to attending class each day, students should plan to spend approximately 10 hours per week working outside of class. This time should be spent reading, completing homework, studying, and making use of available resources. The figure is only an estimated average, some students may need to spend much more than 10 hours practicing in order to learn the material effectively.
 
 # Classroom Expectations
-
 Each day students should plan to bring 
 * a graphing calculator (recommended model is the TI-84)
 * the textbook
