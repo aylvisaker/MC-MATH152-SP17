@@ -110,7 +110,7 @@ The picture below shows, on the left, the region bound by $y=\sin(x^2)$ and the 
 
 When one of these rectangles is revolved about the $y$-axis, we get a hollow cylinder (which we call a cylindric shell). The volume of one of these shells is given by:
 
-$$ V_i = \pi\left(R^2-r^2)h $$
+$$ V_i = \pi\left(R^2-r^2\right)h $$
 
 where $R$ represents the outer radius of the shell, $r$ represents the inner radius, and $h$ represents the height. If the rectangle occupies $(x_i,x_{i+1})$ on the $x$-axis and has height $f\left(\overline{x_i}\right)$, then $r = x_i$, $R = x_{i+1} = x_i + \Delta x$, and $h = f\left(\overline{x_i}\right)$. So the volume of one of our shells could be expressed as:
 
