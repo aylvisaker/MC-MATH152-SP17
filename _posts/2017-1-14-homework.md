@@ -18,8 +18,11 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 * Section 6.2 homework:
     * 13-33, 47, 48, 51
 * Section 6.3 homework:
+    * 8, 9-19, 29-33, 41
 * Section 6.4 homework:
+    * 
 * Section 6.5 homework:
+    * 
 
 # Chapter 7
 * Section 7.1 homework:
