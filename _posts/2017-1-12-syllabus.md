@@ -20,7 +20,7 @@ description: MC-MATH-152
 * Office / Phone : CSB 348 / 309-457-2184
 * Instructor office hours : MF 11:00, Tue 9:00, WThu 2:00 (in CSB 348)
 * TLC Tutor : Anas Karkout (akarkout@monmouthcollege.edu)
-* TLC Tutoring Sessions : Times TBA, Location TBA
+* TLC Tutoring Sessions : TueThu 5:00-7:00, CSB 309
 
 # Course Schedule / Content
 A detailed schedule can be found on the course webpage. This will be kept up to date as the semester progresses. We have a total of 55 class days scheduled (plus 14 labs). Of those, 5 have been allotted for exams. We will require at least 36 days for class discussions. This leaves 14 flex days (a little bit less than one per week). Flex days can be used at any time for any reason as long as it is approved by a simple majority of students who are present. You may want to use one for a review day before an exam, or to spend some extra time discussing a particularly difficult section in the book.
