@@ -26,7 +26,9 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 
 # Chapter 7
 * Section 7.1 homework:
+    * 7-17, 27-33, 37, 41, 51
 * Section 7.2 homework:
+    * 5-13, 17-21, 29, 37-41, 56
 * Section 7.3 homework:
 * Section 7.4 homework:
 * Section 7.7 homework:
