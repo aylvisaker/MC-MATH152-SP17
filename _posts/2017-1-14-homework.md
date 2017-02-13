@@ -32,6 +32,9 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 * Section 7.3 homework:
     * 9-25
 * Section 7.4 homework:
+    * 7, 9, 15, 23, 35, 37, 39, 43
+* Section 7.5 homework:
+* Section 7.6 homework:
 * Section 7.7 homework:
 * Section 7.8 homework:
 
