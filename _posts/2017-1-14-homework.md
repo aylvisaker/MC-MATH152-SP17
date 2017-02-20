@@ -36,7 +36,7 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 * Section 7.5 homework:
 * Section 7.6 homework:
 * Section 7.7 homework:
-* Section 7.8 homework:
+* Section 7.8 homework: 5-35
 
 # Chapter 8
 * Section 8.1 homework:
