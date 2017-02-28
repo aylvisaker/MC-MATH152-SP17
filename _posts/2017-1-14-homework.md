@@ -39,9 +39,9 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 * Section 7.8 homework: 5-35
 
 # Chapter 8
-* Section 8.1 homework:
-* Section 8.2 homework:
-* Section 8.3 homework:
+* Section 8.1 homework: 3-13, 23, 25, 37, 39
+* Section 8.2 homework: 1-15 odd
+* Section 8.3 homework: 1, 5-17, 25-35
 
 # Chapter 9
 * Section 9.1 homework:
