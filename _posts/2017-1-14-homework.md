@@ -52,8 +52,8 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 
 # Chapter 10
 * Section 10.1 homework:
-* Section 10.2 homework:
-* Section 10.3 homework:
+* Section 10.2 homework: 5-17, 31, 33, 34, 37-43, 57, 59
+* Section 10.3 homework: 
 * Section 10.4 homework:
 
 # Chapter 11
