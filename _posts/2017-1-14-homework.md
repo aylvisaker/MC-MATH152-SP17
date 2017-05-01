@@ -62,8 +62,7 @@ Unless otherwise stated, ranges are meant to include only odd problems.
 * Section 11.3 homework: 7, 11, 15, 17, 21, 27, 34
 * Section 11.4 homework: 13, 14, 19, 27, 30, 33, 37
 * Section 11.5 homework: 3, 4, 5, 9, 11, 16, 17, 23, 25, 27
-* Section 11.6 homework:
-* Section 11.8 homework:
-* Section 11.9 homework:
-* Section 11.10 homework:
-* Section 11.11 homework:
+* Section 11.6 homework: 7, 13, 17, 23, 25, 31, 33
+* Section 11.8 homework: 15, 19, 23, 27, 29, 31
+* Section 11.9 homework: 7, 9, 11, 15, 17, 31
+* Section 11.10 homework: 5, 7, 9, 13, 15, 17, 19, 25, 29
