@@ -1,20 +1,50 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Math 152 - Calculus II</title>
+    <description></description>
+    <link>http://aylvisaker.github.io/MC-MATH152-SP17/</link>
+    <atom:link href="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Chapter 6 Outline</title>
+        <description>Applications of Integration</description>
+        <pubDate>Mon, 16 Jan 2017 00:00:00 -0600</pubDate>
+        <link>http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline</link>
+        <guid isPermaLink="true">http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Chapter 5 Outline</title>
+        <description>Integrals</description>
+        <pubDate>Sun, 15 Jan 2017 00:00:00 -0600</pubDate>
+        <link>http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline</link>
+        <guid isPermaLink="true">http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline</guid>
+      </item>
+    
+      <item>
+        <title>Homework Problems</title>
+        <description>MC-MATH-152</description>
+        <pubDate>Sat, 14 Jan 2017 00:00:00 -0600</pubDate>
+        <link>http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/homework</link>
+        <guid isPermaLink="true">http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/homework</guid>
+      </item>
+    
+      <item>
+        <title>Course Schedule</title>
+        <description>MC-MATH-152</description>
+        <pubDate>Fri, 13 Jan 2017 00:00:00 -0600</pubDate>
+        <link>http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/schedule</link>
+        <guid isPermaLink="true">http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/schedule</guid>
+      </item>
+    
+      <item>
+        <title>Course Syllabus</title>
+        <description>MC-MATH-152</description>
+        <pubDate>Thu, 12 Jan 2017 00:00:00 -0600</pubDate>
+        <link>http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/syllabus</link>
+        <guid isPermaLink="true">http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/syllabus</guid>
+      </item>
+    
   </channel>
 </rss>

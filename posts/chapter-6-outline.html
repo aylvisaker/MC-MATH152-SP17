@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Math 152 - Calculus II | Chapter 6 Outline</title>
+  <meta name="description" content="Applications of Integration">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Chapter 6 Outline">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline">
+  <meta property="og:description" content="Applications of Integration">
+  <meta property="og:site_name" content="Math 152 - Calculus II">
+  <meta property="og:image" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline">
+  <meta name="twitter:title" content="Chapter 6 Outline">
+  <meta name="twitter:description" content="Applications of Integration">
+  <meta name="twitter:image" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/MC-MATH152-SP17/assets/apple-touch-icon.png">
+  <link href="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/feed.xml" type="application/rss+xml" rel="alternate" title="Math 152 - Calculus II Last 10 blog posts" />
+
+  
+    <link type="text/css" rel="stylesheet" href="/MC-MATH152-SP17/assets/light.css">
+  
+
+</head>
+
+<body>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/MC-MATH152-SP17/" class="header-logo" title="Math 152 - Calculus II">Math 152 - Calculus II</a>
+  <ul class="header-links">
+      
+      
+    
+    
+      <li>
+        <a href="https://github.com/aylvisaker" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:aylvisaker@monmouthcollege.edu" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/MC-MATH152-SP17/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>Chapter 6 Outline</h1>
+            <p>Applications of Integration</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                January 16, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <!-- span class="article-list-minutes">
+                
+                
+                  6 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span -->
+              <div class="article-list-tags">
+                
+                  <a href="/MC-MATH152-SP17/tag/content">content</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <ul>
+  <li><a href="#s1">Section 6.1 - Areas Between Curves</a></li>
+  <li><a href="#s2">Section 6.2 - Volumes</a></li>
+  <li><a href="#s3">Section 6.3 - Volumes by Cylindrical Shells</a></li>
+  <li><a href="#s4">Section 6.4 - Work</a></li>
+  <li><a href="#s5">Section 6.5 - Average Value of a Function</a></li>
+</ul>
+
+<div id="s1" />
+
+<h1 id="section-61---areas-between-curves">Section 6.1 - Areas Between Curves</h1>
+<p>In the simplest case, we have $0\leq g(x)\leq f(x)$ on the interval $(a,b)$. Then the area between the curves $y=g(x)$, $y=f(x)$, $x=a$, and $x=b$ is given by $\int_a^b (f(x)-g(x))\,dx$. This also works without the assumption that $0\leq f(x)$ because we can approximate the area with a Riemann sum by partitioning the interval $(a,b)$. The height of each rectangle will be $f(x_i)-g(x_i)$ and so $A_i = (f(x_i)-g(x_i))\Delta x$, as depicted in the picture below. The total area is approximated as $\sum_{i=1}^n A_i$, and as $\Delta x\to 0$ (i.e. as $n\to\infty$), this Riemann sum turns into the integral previously described.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.1.02.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.1.02.png" alt="Diagram of the area between two curves." />
+</a></p>
+
+<h3 id="integrating-an-absolute-value">Integrating an absolute value</h3>
+<p>Often it is not the case that one function is larger than the other on the entire interval. In this case, the height of the rectangle is given by $\vert f(x_i)-g(x_i)\vert$. There is no shortcut for integrating $\int_a^b\vert f(x)-g(x)\vert\,dx$. We have to break up $(a,b)$ into all the intervals where $f(x)\leq g(x)$ and all the intervals where $g(x)\leq f(x)$. This can be done by solving $f(x)=g(x)$ and either (a) making a sign chart, or (b) looking at the graph. See the figure below.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.1.03.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.1.03.png" alt="Diagram of the area between two curves." />
+</a></p>
+
+<p>In the above, $a=0$, $b=4\pi$, $f(x)=x^2\sin(x)$ and $g(x)=x^2$. Solving $f(x)=g(x)$ yields $x=0,\pi,2\pi,3\pi,4\pi$. So the area between the curves is given by:</p>
+
+<script type="math/tex; mode=display">\int_0^\pi (f(x)-g(x))\,dx + \int_\pi^{2\pi} (g(x)-f(x))\,dx + \int_{2\pi}^{3\pi} (f(x)-g(x))\,dx + \int_{3\pi}^{4\pi} (g(x)-f(x))\,dx</script>
+
+<h3 id="integrating-along-the-y-axis">Integrating along the $y$-axis</h3>
+<p>In some situations, a region is better described by considering $x$ as a function of $y$. Consider <em>Example 6</em> from your book. We want to find the area enclosed by the line $y = x-1$ and the parabola $y^2 = 2x+6$.</p>
+
+<p>We <em>could</em> set this integral up using $f(x) = \sqrt{2x+6}$, $g(x)=-\sqrt{2x+6}$ and $h(x)=x-1$.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.1.04.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.1.04.png" alt="Example 6 integrating on the x-axis." />
+</a></p>
+
+<p>The area bound by the curves is then given by:</p>
+
+<script type="math/tex; mode=display">\int_{-3}^{-1}(f(x)-g(x))\,dx + \int_{-1}^4 (f(x)-h(x))\,dx.</script>
+
+<p>But we can simplify the process by integrating along the $y$-axis instead of the $x$-axis.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.1.05.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.1.05.png" alt="Example 6 integrating on the y-axis." />
+</a></p>
+
+<p>Then the area bound by the curves is given by the much simpler integral:</p>
+
+<script type="math/tex; mode=display">\int_{-2}^4 \left((y+1) - (y^2/2- 3)\right)\,dy</script>
+
+<div id="s2" />
+
+<h1 id="section-62---volumes">Section 6.2 - Volumes</h1>
+<h3 id="revolving-the-region-under-a-curve-about-the-x-axis">Revolving the region under a curve about the $x$-axis</h3>
+
+<p>Let $f(x) = x + \sin(x)$ and let $S$ be the region bound by $y=f(x)$, the $x$-axis, and $x=8$. We want to find the volume obtained by revolving $R$ about the $x$-axis.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.2.01.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.2.01.png" alt="Solid of revolution." />
+</a></p>
+
+<p>Approximating the region with rectangles is a natural approach because when a rectangle is revolved about the $x$-axis it becomes a cylinder. We know the volume of a cylinder is $V = \pi r^2h$ where $r$ is the radius and $h$ is the height. In this case $r = f(x)$ and $h = \Delta x$. Thus, an approximation of the volume we seek is $\sum V_i = \sum \pi f\left(\overline{x_i}\right)^2 \Delta x$. As $\Delta x\to 0$ we find the exact volume to be</p>
+
+<script type="math/tex; mode=display">\int_a^b \pi f(x)^2\,dx.</script>
+
+<h3 id="revolving-more-complex-regions-about-the-x-axis">Revolving more complex regions about the $x$-axis</h3>
+
+<p>Now let $g(x) = x/2 + \sin(x)$ and let $S$ be the region bound by $y=f(x)$, $y=g(x)$, and $x=8$. We want the volume obtained by revolving $S$ about the $x$-axis.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.2.02.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.2.02.png" alt="Solid of revolution." />
+</a></p>
+
+<p>The rectangles approximating the region $S$ do not touch the $x$-axis, so when we revolve them we get a <em>washer</em> instead of a solid cylinder. The volume of such a washer would be the volume of the outer cylinder minus the volume of the inner cylinder:</p>
+
+<script type="math/tex; mode=display">V_i = \pi R^2 h - \pi r^2 h = \pi (R^2-r^2) h</script>
+
+<p>Here we have $R = f(x)$ and $r = g(x)$</p>
+
+<script type="math/tex; mode=display">V_i = \pi \left(f\left(\overline{x_i}\right)^2 - g\left(\overline{x_i}\right)^2\right) \Delta x.</script>
+
+<p>Finally, summing and letting $\Delta x\to 0$ gives the integral:</p>
+
+<script type="math/tex; mode=display">V = \int_a^b \pi\left(f(x)^2-g(x)^2\right)\,dx</script>
+
+<h3 id="revolving-about-arbitrary-horizontal-lines">Revolving about arbitrary horizontal lines</h3>
+
+<p>Suppose now that we want to revolve the region $S$ about the line $y=-2$ instead of the $x$-axis (which has equation $y=0$).</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.2.03.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.2.03.png" alt="Solid of revolution." />
+</a></p>
+
+<p>Instead of $R = f(x)$, we now have $R = f(x) - (-2) = f(x) + 2$. Similarly, $r = g(x) + 2$. So the volume of the solid of revolution is given by the integral:</p>
+
+<script type="math/tex; mode=display">V = \int_a^b \pi\left((f(x)+2)^2-(g(x)+2)^2\right)\,dx</script>
+
+<h3 id="revolving-about-vertical-lines">Revolving about vertical lines</h3>
+
+<p>The key to keeping all this straight is that when using the method of slicing, we integrate <em>along</em> the axis of revolution. This gives us a radius <em>perpendicular</em> to the axis of revolution (as the radius of a cylinder runs perpendicular to its height). For example consider the region, $S$, bound by $y=\frac14 x^2$, $x=2$, and $y=0$. Let’s find the volume obtained by revolving $S$ about the $y$-axis.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.2.04.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.2.04.png" alt="Sketch of the region S." />
+</a></p>
+
+<p>The cross-sections are washers with $R=2$ and $r=\sqrt{4y}$. We obtained our formula for $r$ by solving $y=\frac14 x^2$ for $y$. Now we can set up our integral. Observe that the smallest $y$-coordinate in the region $S$ is $0$ and the largest is $\frac14 (2^2)=1$. These give us our limits of integration.</p>
+
+<script type="math/tex; mode=display">\int_0^1 \pi(4-4y)\,dy.</script>
+
+<h3 id="general-volumes">General volumes</h3>
+
+<p>The method of slicing can be used to find volumes of regions that aren’t necessarily obtained by revolving a region about a line. In fact, it applies to any region and any axis. All we need to be able to do is associate with each point, $p$, along that axis, a cross-sectional area, $A(p)$. (This is easiest to picture when the axis is either horizontal or vertical with respect to the $xy$-plane, i.e. when $p$ is either $x$ or $y$.) Once we know the cross-sectional areas, we can find the smallest and largest $p$-coordinates in the region and set up the integral: $\int_a^b A(p)\,dp$.</p>
+
+<div id="s3" />
+
+<h1 id="section-63---volumes-by-cylindrical-shells">Section 6.3 - Volumes by Cylindrical Shells</h1>
+
+<p>In this section we will find volumes by integrating <em>perpendicular</em> to the axis of revolution. In some cases this can make the integral much easier to evaluate (not so much in others). Unlike the method of slicing, this method is only suited to finding the volume of a solid of revolution.</p>
+
+<p>The picture below shows, on the left, the region bound by $y=\sin(x^2)$ and the $x$-axis, with $0\leq x\leq\pi$, approximated by rectangles. The axis of revolution in this case is the vertical line $x=0$ (the $y$-axis). On the right, we see the solid of revoution approximated by cylindric shells.</p>
+
+<p><a href="/MC-MATH152-SP17/assets/6.3.01.hd.png" class="fluidbox-trigger">
+  <img src="/MC-MATH152-SP17/assets/6.3.01.png" alt="Method of cylindric shells." />
+</a></p>
+
+<p>When one of these rectangles is revolved about the $y$-axis, we get a hollow cylinder (which we call a cylindric shell). The volume of one of these shells is given by:</p>
+
+<script type="math/tex; mode=display">V_i = \pi\left(R^2-r^2\right)h</script>
+
+<p>where $R$ represents the outer radius of the shell, $r$ represents the inner radius, and $h$ represents the height. If the rectangle occupies $(x_i,x_{i+1})$ on the $x$-axis and has height $f\left(\overline{x_i}\right)$, then $r = x_i$, $R = x_{i+1} = x_i + \Delta x$, and $h = f\left(\overline{x_i}\right)$. So the volume of one of our shells could be expressed as:</p>
+
+<script type="math/tex; mode=display">V_i = \pi\left((x_i+\Delta x)^2 - x_i^2\right)f\left(\overline{x_i}\right).</script>
+
+<p>Notice that $(x_i+\Delta x)^2 - x_i^2 = 2x_i\Delta x + \Delta x^2$. So summing and allowing $\Delta x\to 0$ we get the integral:</p>
+
+<script type="math/tex; mode=display">V = \int_a^b \pi(2x) f(x)\,dx.</script>
+
+<p>In the example above, $a=0$ and $b=\sqrt{pi}$. In all cases, these represent the inner-most and outer-most (respectively) coordinates running perpendicular to the axis of revolution. The astute observer will note that $2\pi r h$ (the quantity we integrated, where $r=x$ and $h=f(x)$) is exactly the area of a hollow cylinder with radius $r$ and height $h$!</p>
+
+<p>If we wanted to revolve about $x=-1$ then we could use $r = x + 1$. If we wanted to revolve a region about the $x$-axis, then our radius would be measured vertically (instead of horizontally) and the height would be measured horizontally. We could even revolve a region bound between two curves by allowing the height to be, e.g. $h = f(x)-g(x)$.</p>
+
+<div id="s4" />
+
+<h1 id="section-64---work">Section 6.4 - Work</h1>
+
+<div id="s5" />
+
+<h1 id="section-65---average-value-of-a-function">Section 6.5 - Average Value of a Function</h1>
+
+          </div>
+
+          <!-- div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=Chapter 6 Outline - http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline ', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-6-outline', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div -->
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script>
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = '//mc-math152-sp17.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+  Created with <a href="https://jekyllrb.com/">Jekyll</a> using the <a href="https://github.com/nielsenramon/chalk">Chalk</a> theme. Edited in <a href="https://stackedit.io/">StackEdit</a>. Hosted by <a href ="https://www.github.com/">GitHub</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/MC-MATH152-SP17/assets/vendor.js"></script>
+<script type="text/javascript" src="/MC-MATH152-SP17/assets/application.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-88755650-1','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+</html>

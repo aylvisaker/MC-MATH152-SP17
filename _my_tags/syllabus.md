@@ -1,3 +1,0 @@
----
-slug: syllabus
-name: Syllabus

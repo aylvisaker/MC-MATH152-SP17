@@ -1,3 +1,0 @@
----
-slug: content
-name: Content

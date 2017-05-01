@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Math 152 - Calculus II | Chapter 5 Outline</title>
+  <meta name="description" content="Integrals">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Chapter 5 Outline">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline">
+  <meta property="og:description" content="Integrals">
+  <meta property="og:site_name" content="Math 152 - Calculus II">
+  <meta property="og:image" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline">
+  <meta name="twitter:title" content="Chapter 5 Outline">
+  <meta name="twitter:description" content="Integrals">
+  <meta name="twitter:image" content="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/MC-MATH152-SP17/assets/apple-touch-icon.png">
+  <link href="http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/feed.xml" type="application/rss+xml" rel="alternate" title="Math 152 - Calculus II Last 10 blog posts" />
+
+  
+    <link type="text/css" rel="stylesheet" href="/MC-MATH152-SP17/assets/light.css">
+  
+
+</head>
+
+<body>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/MC-MATH152-SP17/" class="header-logo" title="Math 152 - Calculus II">Math 152 - Calculus II</a>
+  <ul class="header-links">
+      
+      
+    
+    
+      <li>
+        <a href="https://github.com/aylvisaker" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:aylvisaker@monmouthcollege.edu" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/MC-MATH152-SP17/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>Chapter 5 Outline</h1>
+            <p>Integrals</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                January 15, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <!-- span class="article-list-minutes">
+                
+                
+                  4 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span -->
+              <div class="article-list-tags">
+                
+                  <a href="/MC-MATH152-SP17/tag/content">content</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <ul>
+  <li><a href="#s1">Section 5.1 - Areas and Distances</a></li>
+  <li><a href="#s2">Section 5.2 - The Definite Integral</a></li>
+  <li><a href="#s3">Section 5.3 - The Fundamental Theorem of Calculus</a></li>
+  <li><a href="#s4">Section 5.4 - Indefinite Integrals and the Net Change Theorem</a></li>
+  <li><a href="#s5">Section 5.5 - The Substitution Rule</a></li>
+</ul>
+
+<p>Sections 5.1-5.4 are considered prerequisites for this course. In addition, you should have a working knowledge of:</p>
+<ul>
+  <li>Limits</li>
+  <li>Infinite limits</li>
+  <li>Limits at infinity and L’Hospital’s rule</li>
+  <li>Derivatives</li>
+  <li>Applications of the derivative</li>
+</ul>
+
+<div id="s1" />
+
+<h1 id="section-51---areas-and-distances">Section 5.1 - Areas and Distances</h1>
+<ul>
+  <li>Areas of complex shapes are generally found by approximating with smaller, simpler shapes.</li>
+  <li>Suppose that $f$ is continuous on $[a,b]$ and that for any given $n$, $x_0,\dots,x_n$ is a partition of $[a,b]$ into subintervals of equal size. We define $\Delta x = x_1-x_0 = \frac{b-a}{n}$. Then the area of the region that lies under the graph of $f$ is
+    <ul>
+      <li>$ A = \lim_{n\to\infty}R_n = \lim_{n\to\infty}\left(f(x_1)\Delta x + \dots + f(x_n)\Delta x\right) $</li>
+      <li>$ A = \lim_{n\to\infty}L_n = \lim_{n\to\infty}\left(f(x_0)\Delta x + \dots + f(x_{n-1})\Delta x\right) $</li>
+    </ul>
+  </li>
+  <li>Written in sigma notation, the above are: $ A = \lim_{n\to\infty}\sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty}\sum_{i=0}^{n-1} f(x_i)\Delta x $.</li>
+  <li>Distances under constant velocity are computed as $d = v \times t$. If velocity is allowed to vary, then we compute distance travelled using a Riemann sum. Specifically, $d = \lim_{n\to\infty}\sum_{i=1}^n v(t_i) \Delta t $.</li>
+</ul>
+
+<div id="s2" />
+
+<h1 id="section-52---the-definite-integral">Section 5.2 - The Definite Integral</h1>
+<ul>
+  <li>Suppose that $f$ is defined for $a\leq x\leq b$. For each $n$, divide the interval into $n$ subintervals of equal width $\Delta x = \frac{b-a}{n}$ and choose sample points $x_i^*$ from each subinterval $[x_{i-1},x_i]$. The definite integral of $f$ from $a$ to $b$ is defined as the following limit, provided that the limit exists and gives the same value for any choice of representatives.
+  <script type="math/tex">\int_a^b f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*)\Delta x</script>
+    <ul>
+      <li>The definite integral is a number, not a function of $x$.</li>
+      <li>It is possible to generalize this definition by removing the requirement that subintervals have equal width.</li>
+      <li>If $f$ takes on negative values, then $\int_a^b f(x)\,dx$ is a <em>signed</em> area.</li>
+      <li>The definitel integral of $f$ is not always defined.</li>
+    </ul>
+  </li>
+  <li><strong>Theorem</strong> if $f$ is continuous on $[a,b]$ or has only a finite number of jump discontinuities, then $\int_a^b f(x)\,dx$ exists.</li>
+  <li>If $f$ is integrable on $[a,b]$, then we can use the right-endpoints as representatives when computing a definite integral. In other words: we often use $x_i^* = x_i$ to simplify computations.</li>
+  <li>The Midpoint Rule: When a limit of Riemann sums is difficult or impossible to compute, it may be advantageous to approximate the definite integral with a Riemann with large $n$. In these cases it is usually better to use a midpoint as a representative instead of the right endpoint. I.e. we use $x_i^* = \overline{x_i} = (x_{i-1} + x_i)/2$ instead of $x_i^* = x_i$.</li>
+  <li><strong>Theorem</strong> Properties of the definite integral:
+    <ul>
+      <li>$\int_a^b c\, dx = c(b-a)$</li>
+      <li>$\int_a^b \left(f(x) \pm g(x)\right)\,dx = \int_a^b f(x)\,dx \pm \int_a^b g(x)\,dx$</li>
+      <li>$\int_a^b c\cdot f(x)\,dx = c\int_a^b f(x)\,dx$</li>
+      <li>if $f(x)\geq g(x)$ for $a\leq x\leq b$ then $\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$</li>
+      <li>if $m\leq f(x)\leq M$ for $a\leq x\leq b$ then $m(b-a)\leq \int_a^b f(x)\,dx\leq M(b-a)$</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="s3" />
+
+<h1 id="section-53---the-fundamental-theorem-of-calculus">Section 5.3 - The Fundamental Theorem of Calculus</h1>
+<ul>
+  <li>An <strong>accumulation function</strong> for the function $f$ is a function of the form $F(x) = \int_a^x f(t)\,dt$.</li>
+  <li>If $F$ is an accumulation function for $f$, then $\int_a^b f(x)\,dx = F(b) - F(a)$.</li>
+  <li><strong>Fundamental Theorem Part 1</strong> If $f$ is continuous on $[a,b]$, then its accumulation function is continuous and differentiable. Moreover $F’(x) = f(x)$.</li>
+  <li><strong>Fundamental Theorem Part 2</strong> If $f$ is continuous on $[a,b]$, then $\int_a^b f(x)\,dx = F(b)-F(a)$ where $F$ is any antiderivative of $f$.</li>
+</ul>
+
+<div id="s4" />
+
+<h1 id="section-54---indefinite-integrals-and-the-net-change-theorem">Section 5.4 - Indefinite Integrals and the Net Change Theorem</h1>
+<ul>
+  <li>$\int f(x)\,dx = F(x) + C$ means that $F’(x) = f(x)$.</li>
+  <li>The indefinite integral is always a family of functions.</li>
+  <li><strong>Net Change Theorem</strong> The integral of a rate of change is the net change:
+  <script type="math/tex">\int_a^b F'(x) = F(b) - F(a)</script></li>
+  <li>See the table on page 398 of your book for several indefinite integrals that you should know.</li>
+</ul>
+
+<div id="s5" />
+
+<h1 id="section-55---the-substitution-rule">Section 5.5 - The Substitution Rule</h1>
+<ul>
+  <li>Let $u = g(x)$ be a differentiable function so that $du=g’(x)dx$. If the range of $u$ is an interval $I$ and $f$ is differentiable on $I$, then the substitution rule states that $\int f(u)\,du = F(u) + C$ where $F$ is an antiderivative of $f$.</li>
+  <li>If $u = g(x)$ where $g’(x)$ is continuous on $[a,b]$. Suppose further that $f$ is continuous on the range of $u=g(x)$. Then $\int_a^b f(g(x))g’(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du$.</li>
+  <li>Suppose that $f$ is continuous on $[-a,a]$.
+    <ul>
+      <li>If $f$ is an even function then $\int_{-a}^a f(x)\,dx = 2\int_0^a f(x)\,dx$.</li>
+      <li>If $f$ is an odd function then $\int_{-a}^a f(x)\,dx = 0$.</li>
+    </ul>
+  </li>
+</ul>
+
+          </div>
+
+          <!-- div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=Chapter 5 Outline - http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline ', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=http://aylvisaker.github.io/MC-MATH152-SP17//MC-MATH152-SP17/posts/chapter-5-outline', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div -->
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script>
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = '//mc-math152-sp17.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+  Created with <a href="https://jekyllrb.com/">Jekyll</a> using the <a href="https://github.com/nielsenramon/chalk">Chalk</a> theme. Edited in <a href="https://stackedit.io/">StackEdit</a>. Hosted by <a href ="https://www.github.com/">GitHub</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/MC-MATH152-SP17/assets/vendor.js"></script>
+<script type="text/javascript" src="/MC-MATH152-SP17/assets/application.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-88755650-1','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+</html>
